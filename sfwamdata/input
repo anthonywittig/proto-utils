@@ -1,0 +1,1000 @@
+Salesforce API Object Name	Salesforce API Field Name	Weave Software JSON Field Name	Weave Software JSON Data type
+WAM_Data__c	Id	id	string
+WAM_Data__c	Account__c	accountId	string
+WAM_Data__c	Parent_Account__c	parentAccountId	string
+WAM_Data__c	Primary_Opportunity__c	primaryOpportunityId	string
+WAM_Data__c	Location_Slug__c	location.slug	string
+WAM_Data__c	Weave_Location_ID__c	location.weaveLocationId	string
+WAM_Data__c	Business_Name__c	business.name	string
+WAM_Data__c	Business_Main_Phone__c	business.mainPhone	string
+WAM_Data__c	Business_Email__c	business.email	string
+WAM_Data__c	Business_Time_Zone__c	business.timeZone	string
+WAM_Data__c	Business_Industry__c	business.industry	string
+WAM_Data__c	Business_Currency__c	business.currency	string
+WAM_Data__c	Physical_Address_Id__c	business.physicalAddress.id	string
+WAM_Data__c	Business_Physical_Address_Street__c	business.physicalAddress.street	string
+WAM_Data__c	Business_Physical_Address_City__c	business.physicalAddress.city	string
+WAM_Data__c	Business_Physical_Address_State__c	business.physicalAddress.state	string
+WAM_Data__c	Business_Physical_Address_Postal_Code__c	business.physicalAddress.PostalCode	string
+WAM_Data__c	Business_Physical_Address_Country__c	business.physicalAddress.country	string
+WAM_Data__c	Business_Physical_Address_Verified__c	business.physicalAddress.verified	boolean
+WAM_Data__c	Business_Billing_Address_ID__c	business.billingAddress.id	string
+WAM_Data__c	Business_Billing_Address_Street__c	business.billingAddress.street	string
+WAM_Data__c	Business_Billing_Address_City__c	business.billingAddress.city	string
+WAM_Data__c	Business_Billing_Address_State__c	business.billingAddress.state	string
+WAM_Data__c	Business_Billing_Address_Postal_Code__c	business.billingAddress.postalCode	string
+WAM_Data__c	Business_Billing_Address_Country__c	business.billingAddress.country	string
+WAM_Data__c	Business_Billing_Address_Verified__c	business.billingAddress.verified	boolean
+WAM_Data__c	Business_Under_Construction__c	business.underConstruction	boolean
+WAM_Data__c	Has_Internet_Computers__c	business.hasInternetAndComputers	boolean
+WAM_Data__c	Business_Owner__c	business.owner.id	string
+WAM_Data__c	Business_Owner_First_Name__c	business.owner.firstName	string
+WAM_Data__c	Business_Owner_Last_Name__c	business.owner.lastName	string
+WAM_Data__c	Business_Owner_Phone__c	business.owner.phone	string
+WAM_Data__c	Business_Owner_Email__c	business.owner.email	string
+WAM_Data__c	Business_Owner_Weave_User__c	business.owner.weaveUser	boolean
+WAM_Data__c	Business_Owner_Weave_User_ID__c	business.owner.weaveUserId	string
+WAM_Data__c	Business_Primary_Contact__c	business.primaryContact.id	string
+WAM_Data__c	Business_Primary_Contact_First_Name__c	business.primaryContact.firstName	string
+WAM_Data__c	Business_Primary_Contact_Last_Name__c	business.primaryContact.lastName	string
+WAM_Data__c	Business_Primary_Contact_Phone__c	business.primaryContact.phone	string
+WAM_Data__c	Business_Primary_Contact_Email__c	business.primaryContact.email	string
+WAM_Data__c	Primary_Contact_Weave_User__c	business.primaryContact.weaveUser	boolean
+WAM_Data__c	WAM_User_Id__c	business.primaryContact.weaveUserId	string
+WAM_Data__c	Office_Has_IT_Specialist__c	business.officeHasIt	boolean
+WAM_Data__c	Business_Contact__c	business.itContact.id	string
+WAM_Data__c	Business_IT_Contact_First_Name__c	business.itContact.firstName	string
+WAM_Data__c	Business_IT_Contact_Last_Name__c	business.itContact.lastName	string
+WAM_Data__c	Business_IT_Contact_Phone__c	business.itContact.phone	string
+WAM_Data__c	Business_IT_Contact_Email__c	business.itContact.email	string
+WAM_Data__c	Business_IT_Contact_Weave_User__c	business.itContact.weaveUser	boolean
+WAM_Data__c	Business_IT_Contact_Weave_User_ID__c	business.itContact.weaveUserId	string
+WAM_Data__c	Business_Hours_Sunday_Is_Open__c	business.businessHours.sunday.isOpen	boolean
+WAM_Data__c	Business_Hours_Sunday_Start_Time__c	business.businessHours.sunday.startTime	string
+WAM_Data__c	Business_Hours_Sunday_End_Time__c	business.businessHours.sunday.endTime	string
+WAM_Data__c	Business_Hours_Monday_Is_Open__c	business.businessHours.monday.isOpen	boolean
+WAM_Data__c	Business_Hours_Monday_Start_Time__c	business.businessHours.monday.startTime	string
+WAM_Data__c	Business_Hours_Monday_End_Time__c	business.businessHours.monday.endTime	string
+WAM_Data__c	Business_Hours_Tuesday_Is_Open__c	business.businessHours.tuesday.isOpen	boolean
+WAM_Data__c	Business_Hours_Tuesday_Start_Time__c	business.businessHours.tuesday.startTime	string
+WAM_Data__c	Business_Hours_Tuesday_End_Time__c	business.businessHours.tuesday.endTime	string
+WAM_Data__c	Business_Hours_Wednesday_Is_Open__c	business.businessHours.wednesday.isOpen	boolean
+WAM_Data__c	Business_Hours_Wednesday_Start_Time__c	business.businessHours.wednesday.startTime	string
+WAM_Data__c	Business_Hours_Wednesday_End_Time__c	business.businessHours.wednesday.endTime	string
+WAM_Data__c	Business_Hours_Thursday_Is_Open__c	business.businessHours.thursday.isOpen	boolean
+WAM_Data__c	Business_Hours_Thursday_Start_Time__c	business.businessHours.thursday.startTime	string
+WAM_Data__c	Business_Hours_Thursday_End_Time__c	business.businessHours.thursday.endTime	string
+WAM_Data__c	Business_Hours_Friday_Is_Open__c	business.businessHours.friday.isOpen	boolean
+WAM_Data__c	Business_Hours_Friday_Start_Time__c	business.businessHours.friday.startTime	string
+WAM_Data__c	Business_Hours_Friday_End_Time__c	business.businessHours.friday.endTime	string
+WAM_Data__c	Business_Hours_Saturday_Is_Open__c	business.businessHours.saturday.isOpen	boolean
+WAM_Data__c	Business_Hours_Saturday_Start_Time__c	business.businessHours.saturday.startTime	string
+WAM_Data__c	Business_Hours_Saturday_End_Time__c	business.businessHours.saturday.endTime	string
+WAM_Data__c	Phone_Order_Address_Id__c	phoneOrder.address.id	string
+WAM_Data__c	Phone_Order_Address_Street__c	phoneOrder.address.street	string
+WAM_Data__c	Phone_Order_Address_City__c	phoneOrder.address.city	string
+WAM_Data__c	Phone_Order_Address_State__c	phoneOrder.address.state	string
+WAM_Data__c	Phone_Order_Postal_Code__c	phoneOrder.address.postalCode	string
+WAM_Data__c	Phone_Order_Shipping_Country__c	phoneOrder.address.country	string
+WAM_Data__c	Phone_Order_Address_Verified__c	phoneOrder.address.verified	boolean
+WAM_Data__c	Phone_Order_Shipping_Method__c	phoneOrder.shippingMethod	string
+Phone_Order__c	Id	phoneOrder.units[].id	string
+Phone_Order__c	Name	phoneOrder.units[].name	string
+Phone_Order__c	Phone_Order_Quantity__c	phoneOrder.units[].quantity	number
+WAM_Data__c	Phone_Internet_Bundled__c	network.phoneAndInternetBundled	string
+WAM_Data__c	Services_Using_Phone_System__c	network.hasServicesUsingPhoneSystem	string
+WAM_Data__c	Wall_Mounts_Needed__c	network.phonePlacement.wallMounted	number
+WAM_Data__c	Ethernet_Wired_to_All__c	network.phonePlacement.ethernetWiredToAllWorkstations	string
+WAM_Data__c	Workstations_Not_Wired_for_Ethernet__c	network.phonePlacement.workstationsNotWiredForEthernet	number
+WAM_Data__c	Phones_Away_From_Workstations__c	network.phonePlacement.phonesPlacedAwayFromWorkstations	string
+WAM_Data__c	Ethernet_Ports_Installed__c	network.phonePlacement.ethernetPortsToInstall	number
+WAM_Data__c	Network_Router_Make__c	network.router.make	string
+WAM_Data__c	Network_Router_Model__c	network.router.model	string
+WAM_Data__c	Network_Router_Admin__c	network.router.admin.id	string
+WAM_Data__c	Network_Router_Admin_First_Name__c	network.router.admin.firstName	string
+WAM_Data__c	Network_Router_Admin_Last_Name__c	network.router.admin.lastName	string
+WAM_Data__c	Network_Router_Admin_Phone__c	network.router.admin.phone	string
+WAM_Data__c	Network_Router_Admin_Email__c	network.router.admin.email	string
+WAM_Data__c	Router_Admin_Weave_User_Exists__c	network.router.admin.weaveUser	boolean
+WAM_Data__c	Router_Admin_Weave_User__c	network.router.admin.weaveUserId	string
+WAM_Data__c	Network_Ping_Status__c	network.speed.pingStatus	string
+WAM_Data__c	Network_Download_Status__c	network.speed.downloadStatus	string
+WAM_Data__c	Network_Upload_Status__c	network.speed.uploadStatus	string
+WAM_Data__c	Network_Jitter_Status__c	network.speed.jitterStatus	string
+WAM_Data__c	Speed_Test_Timed_Out__c	network.speed.testTimedOut	boolean
+WAM_Data__c	Speed_Test_Failed__c	network.speed.failedTestDisclaimer	boolean
+WAM_Data__c	Current_Provider_Recent_Bill__c	phonePort.currentProvider.recentBill	string
+WAM_Data__c	Current_Provider_Name__c	phonePort.currentProvider.name	string
+WAM_Data__c	Current_Provider_Account_Number__c	phonePort.currentProvider.accountNumber	string
+WAM_Data__c	Current_Provider_Authorized_User_ID__c	phonePort.currentProvider.authorizedUser.id	string
+WAM_Data__c	Current_Provider_Authorized_User_First__c	phonePort.currentProvider.authorizedUser.firstName	string
+WAM_Data__c	Current_Provider_Authorized_User_Last__c	phonePort.currentProvider.authorizedUser.lastName	string
+WAM_Data__c	Current_Provider_Authorized_User_Phone__c	phonePort.currentProvider.authorizedUser.phone	string
+WAM_Data__c	Current_Provider_Authorized_User_Email__c	phonePort.currentProvider.authorizedUser.email	string
+WAM_Data__c	Current_Provider_Auth_User_Weave_User__c	phonePort.currentProvider.authorizedUser.weaveUser	boolean
+WAM_Data__c	Current_Provider_Auth_User_Weave_User_ID__c	phonePort.currentProvider.authorizedUser.weaveUserId	string
+WAM_Data__c	Current_Provider_Service_Address_ID__c	phonePort.currentProvider.serviceAddress.id	string
+WAM_Data__c	Current_Provider_Service_Address_Street__c	phonePort.currentProvider.serviceAddress.street	string
+WAM_Data__c	Current_Provider_Service_Address_City__c	phonePort.currentProvider.serviceAddress.city	string
+WAM_Data__c	Current_Provider_Service_Address_State__c	phonePort.currentProvider.serviceAddress.state	string
+WAM_Data__c	Current_Prov_Service_Address_Postal_Code__c	phonePort.currentProvider.serviceAddress.PostalCode	string
+WAM_Data__c	Current_Provider_Service_Address_Country__c	phonePort.currentProvider.serviceAddress.country	string
+WAM_Data__c	Current_Provider_Address_Verified__c	phonePort.currentProvider.serviceAddress.verified	boolean
+WAM_Data__c	Current_Provider_Confirmed_By__c	phonePort.currentProvider.informationConfirmedByUser	boolean
+Phone_Port__c	Phone_Number_Type__c	phonePort.phoneNumbers[].type	string
+Phone_Port__c	Phone_Number__c	phonePort.phoneNumbers[].number	string
+WAM_Data__c	Estimated_Port_Date__c	phonePort.estimatedPortAt	string
+N/A	N/A	additionalUsersToInvite[].email	string
+N/A	N/A	additionalUsersToInvite[].isAdmin	boolean
+N/A	N/A	additionalUsersToInvite[].invited	boolean
+WAM_Data__c	Latest_Download_At__c	software.latestDownloadAt	string
+WAM_Data__c	Unique_User_Sign_Ins__c	software.uniqueUserSignins	number
+WAM_Data__c	Scheduled_Install_Date__c	dataSync.scheduledInstallCallAt	string
+WAM_Data__c	Install_Technician__c	dataSync.softwareInstallTechnician.id	string
+WAM_Data__c	Install_Technician_First_Name__c	dataSync.softwareInstallTechnician.firstName	string
+WAM_Data__c	Install_Technician_Last_Name__c	dataSync.softwareInstallTechnician.lastName	string
+WAM_Data__c	Install_Technician_Phone__c	dataSync.softwareInstallTechnician.phone	string
+WAM_Data__c	Install_Technician_Email__c	dataSync.softwareInstallTechnician.email	string
+WAM_Data__c	Install_Technician_Weave_User_Exists__c	dataSync.softwareInstallTechnician.weaveUser	boolean
+WAM_Data__c	Install_Technician_Weave_User__c	dataSync.softwareInstallTechnician.weaveUserId	string
+Sync_Integration__c	Name	dataSync.integrations[].name	string
+Sync_Integration__c	Sync_Integration_Cloud_Based__c	dataSync.integrations[].cloudBased	string
+N/A	N/A	dataSync.integrations[].username	string
+N/A	N/A	dataSync.integrations[].password	string
+Packages_Product__c	Id	servicePackages.raw[].productId	string
+Packages_Product__c	Packages_Product_Code__c	servicePackages.raw[].productCode	string
+Packages_Product__c	Packages_Product_Opportunity_Id__c	servicePackages.raw[].opportunityId	string
+WAM_Data__c	Form_Progress_Started_At__c	intakeFormProgress.startedAt	string
+WAM_Data__c	Form_Progress_Completed_At__c	intakeFormProgress.completedAt	string
+WAM_Data__c	Form_Progress_Completed_By__c	intakeFormProgress.completedByUser	boolean
+WAM_Data__c	Form_Progress_User_Id__c	intakeFormProgress.user.id	string
+WAM_Data__c	Form_Progress_First_Name__c	intakeFormProgress.user.firstName	string
+WAM_Data__c	Form_Progress_Last_Name__c	intakeFormProgress.user.lastName	string
+WAM_Data__c	Form_Progress_Phone__c	intakeFormProgress.user.phone	string
+WAM_Data__c	Form_Progress_Email__c	intakeFormProgress.user.email	string
+WAM_Data__c	Form_Progress_User_Exists__c	intakeFormProgress.user.weaveUser	boolean
+WAM_Data__c	Form_Progress_Weave_User__c	intakeFormProgress.user.weaveUserId	string
+N/A	N/A	intakeFormProgress.steps[].id	string
+N/A	N/A	intakeFormProgress.steps[].name	string
+N/A	N/A	intakeFormProgress.steps[].startedAt	string
+N/A	N/A	intakeFormProgress.steps[].completedAt	string
+N/A	N/A	intakeFormProgress.steps[].section	string
+N/A	N/A	intakeFormProgress.steps[].task	string
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
