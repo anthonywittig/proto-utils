@@ -5,22 +5,17 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
-	"strconv"
 	"strings"
 
 	"github.com/google/uuid"
 )
 
 var (
-	xlineRegx = regexp.MustCompile(`"([^"]+)": ([^,]+)[,]?`)
-	//lineRegx  = regexp.MustCompile(`(\w+)\s+(\w+)\s(\w+)\s(\w+)`)
 	lineRegx = regexp.MustCompile(`(\S+)\s+(\S+)\s+(\S+)\s+(\S+)`)
 )
 
 func main() {
 	err := generateStuf()
-	//err := generateStruct()
-	//err := generateGRPCJson()
 	if err != nil {
 		panic(err)
 	}
@@ -166,6 +161,11 @@ message CreateWAMDataResponse {
 	wamStruct.WriteString("}\n")
 	wamCurl.WriteString("}\n")
 
+	err := os.Mkdir("output", os.ModePerm|os.ModeDir)
+	if err != nil && !os.IsExist(err) {
+		return fmt.Errorf("error making directory: %s", err.Error())
+	}
+
 	for fName, w := range map[string]*strings.Builder{
 		"wamProto":  &wamProto,
 		"wamStruct": &wamStruct,
@@ -181,87 +181,6 @@ message CreateWAMDataResponse {
 	}
 
 	fmt.Println(wamCurl.String())
-
-	return nil
-}
-
-func generateStruct() error {
-	fmt.Println(`type WAMData struct {`)
-
-	r := NewLineReader(rawData())
-	r.skipFirstAndLast()
-
-	fmt.Println("    ID string `json:\"id\" sf:\"ID\"`")
-
-	for {
-		line, ok := r.next()
-		if !ok {
-			break
-		}
-
-		m := lineRegx.FindStringSubmatch(line)
-		if len(m) != 3 {
-			return fmt.Errorf("non-matching line: \"%s\"", line)
-		}
-
-		sfName := m[1]
-
-		jName := strings.Replace(m[1], "__c", "", 1)
-		jName = strings.ToLower(jName)
-
-		fName := strings.ToUpper(string(jName[0])) + jName[1:]
-		fName = strings.Replace(fName, "Id", "ID", 1)
-
-		pType := ""
-		if strings.Contains(m[2], `"`) {
-			pType = "string"
-		} else if strings.Contains(m[2], "true") || strings.Contains(m[2], "false") {
-			pType = "bool"
-		} else if _, err := strconv.Atoi(m[2]); err == nil {
-			pType = "float32"
-		}
-		if pType == "" {
-			return fmt.Errorf("unhandled type inference for: %s", m[2])
-		}
-
-		fmt.Printf("    %s %s `json:\"%s\" sf:\"%s\"`\n", fName, pType, jName, sfName)
-	}
-
-	fmt.Println("}")
-
-	return nil
-}
-
-func generateGRPCJson() error {
-	fmt.Println("{")
-	fmt.Println(`    "consumer": 1,`)
-	fmt.Println(`    "wamData": {`)
-
-	r := NewLineReader(rawData())
-	r.skipFirstAndLast()
-
-	for {
-		line, ok := r.next()
-		if !ok {
-			break
-		}
-
-		m := lineRegx.FindStringSubmatch(line)
-		if len(m) != 3 {
-			return fmt.Errorf("non-matching line: \"%s\"", line)
-		}
-
-		jName := strings.Replace(m[1], "__c", "", 1)
-		jName = strings.ToLower(jName)
-
-		fName := strings.ToUpper(string(jName[0])) + jName[1:]
-		fName = strings.Replace(fName, "Id", "ID", 1)
-
-		fmt.Printf("        \"%s\": %s,\n", jName, m[2])
-	}
-
-	fmt.Println("    }")
-	fmt.Println("}")
 
 	return nil
 }
